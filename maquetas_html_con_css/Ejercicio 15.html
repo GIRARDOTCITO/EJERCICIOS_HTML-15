@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--Centro De Biotecnologia Agropecuaria
+    Analisis y Desarrollo de Software
+    Ficha: 2470980
+    Autor: Juan Sebastián Girardot Antonio 
+    Fecha de creación: 16/Feb/2022
+    Fecha de actualización: 22/Feb/2022-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+    <link rel="icon" href="nazi.png">
+    <link rel="stylesheet" href="Ejercicio15.css">
+</head>
+
+<body>
+    <div id="container">
+        <h3 class="guaracha">Información sobre el producto</h3>
+        <form action="/php/insertar_subasta.php" method="post" enctype="multipart/form-data">
+            <fieldset class="guaracha">
+                <legend class="guaracha">Datos básicos</legend>
+
+                <label for="nombre">Nombre</label> <br />
+                <input type="text" name="nombre" id="nombre" size="50" maxlength="250" />
+                <br /><br />
+                <label for="descripcion">Descripción</label> <br />
+                <textarea name="descripcion" id="descripcion" cols="40" rows="5"></textarea>
+                <br /><br />
+                Foto <input type="file" name="foto" />
+                <br /><br />
+                <input name="contador" type="checkbox" value="si" /> Añadir contador de vistas
+            </fieldset>
+            <fieldset class="guaracha">
+                <legend class="guaracha">Datos económicos</legend>
+                <label for="precio">Precio</label>
+                <input type="text" size="5" id="precio" name="precio" /> &euro;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="impuestos">Impuestos</label>
+                <select id="impuestos" name="impuestos">
+                    <option value="4">4%</option>
+                    <option value="7">7%</option>
+                    <option value="16">16%</option>
+                    <option value="25">25%</option>
+                </select>
+                <br /><br />
+                <label>Promoción</label> <br />
+                <input type="radio" name="promocion" value="ninguno" checked="checked" /> Ninguno <br />
+                <input type="radio" name="promocion" value="portes" /> Transporte gratuito <br />
+                <input type="radio" name="promocion" value="descuento" /> Descuento 5%
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+<!--textarea: Representa un control para la edición multilínea de texto sin formato.
+    cols: Es usado en las tablas para proveer de atributos comunes a todas las celdas en una columna o grupo de columnas.
+    &nbsp: Cuando quieras agregar solo un espacio, significa espacio sin ruptura. 
+    head: Etiqueta la cual provee información general, acerca del documento incluyendo su titulo y enlaces a scripts y hojas de estilos
+    meta: Sirve para aportar información sobre el documento, y es un elemento de cabecera.
+    title: es un tag de código HTML, quele permiete darle un titulo a las paginas web. Este titulo se puede encontrar en la barra de título del navegador.
+    link: la etiqueta link especifica la relación entre el documento actual y un recurso externo. Este elemento es el mas usado para enlazar has de estilos.
+    body: Representa el contenido de un documento HTML. solo puede haber un elemento <body> en un documento. 
+    lang: Es la opción en la que nos dice en que lenguaje deberia estar el documento.
+    name: El atributo name es la que permite a un script acceder a su contenido.
+    content: Se emplea para generar nuevo contenido de forma dinámica e insertarlo en la página HTML.
+    rel: Es un atribujo del lenguaje de marcado HTML qu, en un enlace entre dos documentos, describe la relación que mantiene el docuemtno de destino con el documento presente (el que enlaza).
+    p: El elemento para (párrafo) es el apropiado para distribuir el texto en párrafos.
+    strong: El elemento es el apropiado para marcar con especial "énfasis" partes importantes de un texto.
+    em: Elemento es apropiado porque provee énfasis al texto que encierra.
+    del: Sirve para tachar un texto en HTML. 
+    div: Se emplea para definir un bloque de contenido o sección de la página, para poder aplicarle diferentes estilos e incluso para realizar operaciones sobre ese bloque específico -->-->
+
+</html>

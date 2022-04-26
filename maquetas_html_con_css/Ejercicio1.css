@@ -1,0 +1,32 @@
+/*Centro de biotecnologia Agropecuario
+Análisis y Desarrollo de Software 
+Ficha: 2470980
+Autor: Juan Sebastian Girardot Antonio
+Fecha de creación: 16 de febrero 2022
+Fecha de actualización: 23 de febrero 2022 */
+
+body{
+background-color: rgb(248, 232, 6);
+}
+/*Aca utilizamos background-color, para cambiar el fondo de mi página*/
+
+
+.firulais{
+    color: hsl(0, 14%, 89%);
+    font-size: large;
+    font-family:monospace;
+}
+    
+/*Aca se utiliza tanto "color", como font-size, y font-family, para dar color a la letra de nuestra pagina y anchura.*/
+
+
+#container{
+    width: 1000px;
+    height: 500px;
+    background-color: hsla(239, 100%, 50%, 0.836);
+    margin-left: auto;
+    margin-right: auto;
+    /*Aca utilizamos background-color, para cambiar el fondo de mi página*/
+    /*Aca se utiliza tanto "color", como font-size, y font-family, para dar color a la letra de nuestra pagina y anchura.*/
+/*El container es el que nos ayuda a centrar y colocar un cuadro el cual nos de una vista centrada de lo que tenemos expuesto.*/
+}
